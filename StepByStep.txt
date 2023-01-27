@@ -1,0 +1,24 @@
+Step 3 [ Transfer .tflite into STM32CubeMX ]
+	3.1
+	1) Create a new project of STM32H747I-DISCO
+	2) "Software Packs" -> "Select Components"
+	3) Show conponents for content -> "Cortex-M7"
+	4) active the "Core" of X-CUBE-AI
+	5) set Application as "Application", and click "OK"
+	6) click "Software Packs", allow CubeMX open peripherals automatically
+	7) Add network, name it "network", select "TFLite" as file type, and select your .tflite file, click "Analyze"
+	8) after analyzing finished, click "OK
+	9) click gear button to do advance setting, check the box of "Use activation buffer for input buffer"
+	10) make sure the box of "Use activation buffer for output buffer" is unselected, then click "OK"
+	11) it'll auto analyze again, after it finished, click "Validate on desktop" to check out the model work functionally
+	12) go to "Project Manager"
+	13) give the project name and location, choose "STM32CubeIDE" as Toolchain
+	14) click "GENERATE CODE"
+ 
+	3.2
+	1) double click ".project" file in "FP-AI-VISION1_V3.1.0\Projects\STM32H747I-DISCO\Applications\PersonDetection\MobileNetv2_Model\STM32CubeIDE" to generate project
+	2) replace the model file ( network.c, network.h, network_config.h, network_data.h, network_data_params.c, network_data_params.h) by the files generate in Step 3(file of CubeMX is locate at  "CM7\X-CUBE-AI\App")  P.S. .h files locate at Inc and .c files are in Src
+	3) open CM7\Application\fp_vision_app.c
+	4) go to line 125, chage the labels as the output labels of your model
+	5) right click on the CM7 project, choose Clean Project
+	6) debug and run it on the broad

@@ -1,0 +1,22 @@
+!SESSION 2023-01-21 00:04:38.345 -----------------------------------------------
+eclipse.buildId=Version 1.11.0
+java.version=11.0.16
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  C:\Git_repository\FP-AI-VISION1\FP-AI-VISION1_V3.1.0(official)\Projects\STM32H747I-DISCO\Applications\PersonDetection\MobileNetv2_Model\STM32CubeIDE\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Git_repository\FP-AI-VISION1\FP-AI-VISION1_V3.1.0(official)\Projects\STM32H747I-DISCO\Applications\PersonDetection\MobileNetv2_Model\STM32CubeIDE\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-01-21 00:05:48.744
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-01-21 00:05:48.848
+!MESSAGE Log4j initialized with config file C:\Git_repository\FP-AI-VISION1\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-01-21 00:05:53.965
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-21 00:05:56.504
+!MESSAGE Indexed 'STM32H747I_DISCO_PersonDetect_MobileNetv2_CM4' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-01-21 00:06:13.826
+!MESSAGE Indexed 'STM32H747I_DISCO_PersonDetect_MobileNetv2_CM7' (69 sources, 200 headers) in 13.7 sec: 32,675 declarations; 152,814 references; 5 unresolved inclusions; 1 syntax errors; 425 unresolved names (0.23%)
